@@ -58,3 +58,7 @@ Result 3:
 ```
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_scatter.png)
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_3d.png)
+
+# references
+- [acconeer-python-exploration/README.md](https://github.com/acconeer/acconeer-python-exploration/blob/master/README.md)
+- [XM125_connect_troubleshooting](https://docs.sparkfun.com/SparkFun_Qwiic_Pulsed_Radar_Sensor_XM125/troubleshooting/#issue-1-connecting-to-the-acconeer-exploration-tool)
