@@ -60,15 +60,13 @@ Result 3:
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_3d.png)
 
 # youtube video
-- installation
-
+- installation:
   [https://youtu.be/b6R--BpjOM4](https://youtu.be/b6R--BpjOM4)
 
-- run basic.py and basic_plot.py to get graph from raw data
-
+- run basic.py and basic_plot.py to get graph from raw data:
   [https://youtu.be/ERDY-VRpA3k](https://youtu.be/ERDY-VRpA3k)
 
-- run basic_plot.py to get 3d graph from raw data
+- run basic_plot.py to get 3d graph from raw data:
   [https://youtu.be/0qt5du7j4OU](https://youtu.be/0qt5du7j4OU)
   
 # references
