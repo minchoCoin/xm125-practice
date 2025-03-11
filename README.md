@@ -59,6 +59,18 @@ Result 3:
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_scatter.png)
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_3d.png)
 
+# youtube video
+- installation
+
+  [https://youtu.be/b6R--BpjOM4](https://youtu.be/b6R--BpjOM4)
+
+- run basic.py and basic_plot.py to get graph from raw data
+
+  [https://youtu.be/ERDY-VRpA3k](https://youtu.be/ERDY-VRpA3k)
+
+- run basic_plot.py to get 3d graph from raw data
+  [https://youtu.be/0qt5du7j4OU](https://youtu.be/0qt5du7j4OU)
+  
 # references
 - [acconeer-python-exploration/README.md](https://github.com/acconeer/acconeer-python-exploration/blob/master/README.md)
 - [XM125_connect_troubleshooting](https://docs.sparkfun.com/SparkFun_Qwiic_Pulsed_Radar_Sensor_XM125/troubleshooting/#issue-1-connecting-to-the-acconeer-exploration-tool)
