@@ -34,8 +34,8 @@ client.setup_session(sensor_config)
 '''
 
 sensor_config = a121.SensorConfig()
-sensor_config.num_points = 6
-sensor_config.sweeps_per_frame = 4
+sensor_config.num_points = 15
+sensor_config.sweeps_per_frame = 10
 sensor_config.hwaas = 16
 client.setup_session(sensor_config)
 
@@ -212,15 +212,15 @@ def custom_graph(result):
     plt.close()
 
 n = 1
+results=[]
 for i in range(n):
 
     result = client.get_next()
-    
+    results.append(result.frame)
     print(f"Result {i + 1}:")
-    print(result.frame)
-    custom_graph(result.frame)
-
-
-
-
+    print(result)
+    
 client.close()
+
+for result in results:
+    custom_graph(result)
