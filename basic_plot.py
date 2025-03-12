@@ -79,7 +79,7 @@ def custom_graph(result):
     plt.savefig('iq_heatmap.png')
     plt.close()
 
-    # 2. 모든 행에 대해 선 그래프 그리기
+   
     plt.figure(figsize=(15, 10))
 
     # 실수부 선 그래프
@@ -131,7 +131,7 @@ def custom_graph(result):
         plt.xlabel('Real part(I)')
         plt.ylabel('Imaginary part(Q)')
         
-        # 각 점에 인덱스 표시
+        
         for j in range(cols):
             plt.annotate(f"{j}", (real_part[i, j], imag_part[i, j]), 
                         fontsize=9, xytext=(5, 5), textcoords='offset points')
@@ -142,7 +142,7 @@ def custom_graph(result):
 
     # 4. 극좌표 표현 (진폭과 위상)
     magnitude = np.abs(result)
-    phase = np.angle(result, deg=True)  # 도 단위로 변환
+    phase = np.angle(result, deg=True) 
 
     plt.figure(figsize=(15, 10))
 
@@ -170,7 +170,7 @@ def custom_graph(result):
     plt.savefig('magnitude_phase.png')
     plt.close()
     
-    # 5. 3D 플롯으로 모든 차원 시각화
+    
     from mpl_toolkits.mplot3d import Axes3D
 
     # 실수부 3D 플롯
@@ -213,7 +213,7 @@ def custom_graph(result):
 
 n = 1
 for i in range(n):
-    # Data is retrieved from the sensor with "get_next".
+
     result = client.get_next()
     
     print(f"Result {i + 1}:")
@@ -222,5 +222,5 @@ for i in range(n):
 
 
 
-# When we are done, we should close the connection to the server.
+
 client.close()
