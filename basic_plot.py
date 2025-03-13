@@ -57,7 +57,7 @@ def custom_graph(result):
     plt.colorbar(im1, label='Amplitude')
     plt.title('Real(I) heatmap')
     plt.xlabel('distance point')
-    plt.ylabel('frame/swip')
+    plt.ylabel('frame/sweep')
     for i in range(rows):
         for j in range(cols):
             plt.text(j, i, f"{real_part[i, j]:.0f}", 
@@ -69,7 +69,7 @@ def custom_graph(result):
     plt.colorbar(im2, label='Amplitude')
     plt.title('Imaginary(Q) heatmap')
     plt.xlabel('distance point')
-    plt.ylabel('frame/swip')
+    plt.ylabel('frame/sweep')
     for i in range(rows):
         for j in range(cols):
             plt.text(j, i, f"{imag_part[i, j]:.0f}", 
@@ -85,7 +85,7 @@ def custom_graph(result):
     # 실수부 선 그래프
     plt.subplot(211)
     for i in range(rows):
-        plt.plot(real_part[i, :], 'o-', label=f'frame/swip {i+1}')
+        plt.plot(real_part[i, :], 'o-', label=f'frame/sweep {i+1}')
     plt.grid(True)
     plt.title('Real(I) value')
     plt.xlabel('distance point')
@@ -95,7 +95,7 @@ def custom_graph(result):
     # 허수부 선 그래프
     plt.subplot(212)
     for i in range(rows):
-        plt.plot(imag_part[i, :], 'o-', label=f'frame/swip {i+1}')
+        plt.plot(imag_part[i, :], 'o-', label=f'frame/sweep {i+1}')
     plt.grid(True)
     plt.title('Imaginary(Q) value')
     plt.xlabel('distance point')
@@ -127,7 +127,7 @@ def custom_graph(result):
         plt.grid(True)
         plt.axhline(y=0, color='k', linestyle='-', alpha=0.3)
         plt.axvline(x=0, color='k', linestyle='-', alpha=0.3)
-        plt.title(f'frame/swip {i+1} IQ scatterplot')
+        plt.title(f'frame/sweep {i+1} IQ scatterplot')
         plt.xlabel('Real part(I)')
         plt.ylabel('Imaginary part(Q)')
         
@@ -149,7 +149,7 @@ def custom_graph(result):
     # 진폭 그래프
     plt.subplot(211)
     for i in range(rows):
-        plt.plot(magnitude[i, :], 'o-', label=f'frame/swip {i+1}')
+        plt.plot(magnitude[i, :], 'o-', label=f'frame/sweep {i+1}')
     plt.grid(True)
     plt.title('signal amplitude(abs)')
     plt.xlabel('distance point')
@@ -159,7 +159,7 @@ def custom_graph(result):
     # 위상 그래프
     plt.subplot(212)
     for i in range(rows):
-        plt.plot(phase[i, :], 'o-', label=f'frame/swip {i+1}')
+        plt.plot(phase[i, :], 'o-', label=f'frame/sweep {i+1}')
     plt.grid(True)
     plt.title('signal phase')
     plt.xlabel('distance point')
@@ -180,7 +180,7 @@ def custom_graph(result):
     ax1.plot_surface(x, y, real_part, cmap='viridis', alpha=0.8)
     ax1.set_title('real(I) 3D ')
     ax1.set_xlabel('distance point')
-    ax1.set_ylabel('frame/swip')
+    ax1.set_ylabel('frame/sweep')
     ax1.set_zlabel('Amplitude')
 
     # 허수부 3D 플롯
@@ -188,7 +188,7 @@ def custom_graph(result):
     ax2.plot_surface(x, y, imag_part, cmap='plasma', alpha=0.8)
     ax2.set_title('Imaginary (Q) 3D')
     ax2.set_xlabel('distance point')
-    ax2.set_ylabel('frame/swip')
+    ax2.set_ylabel('frame/sweep')
     ax2.set_zlabel('Amplitude')
 
     # 진폭 3D 플롯
@@ -196,7 +196,7 @@ def custom_graph(result):
     ax3.plot_surface(x, y, magnitude, cmap='magma', alpha=0.8)
     ax3.set_title('Amplitude 3D')
     ax3.set_xlabel('distance point')
-    ax3.set_ylabel('frame/swip')
+    ax3.set_ylabel('frame/sweep')
     ax3.set_zlabel('Amplitude')
 
     # 위상 3D 플롯
@@ -204,7 +204,7 @@ def custom_graph(result):
     ax4.plot_surface(x, y, phase, cmap='coolwarm', alpha=0.8)
     ax4.set_title('Phase 3D')
     ax4.set_xlabel('distance point')
-    ax4.set_ylabel('frame/swip')
+    ax4.set_ylabel('frame/sweep')
     ax4.set_zlabel('phase(degree)')
 
     plt.tight_layout()
