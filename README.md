@@ -59,6 +59,11 @@ Result 3:
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_scatter.png)
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/iq_3d.png)
 
+# get range-velocity heatmap
+checkout sparse_iq_copy.py
+![image](https://github.com/minchoCoin/xm125-practice/blob/main/range_velocity_map/result3.png)
+
+
 # youtube video
 - installation:
   [https://youtu.be/b6R--BpjOM4](https://youtu.be/b6R--BpjOM4)
@@ -69,6 +74,14 @@ Result 3:
 - run basic_plot.py to get 3d graph from raw data:
   [https://youtu.be/0qt5du7j4OU](https://youtu.be/0qt5du7j4OU)
   
+- get range-doppler heatmap using sparse_iq_copy.py
+  [https://youtu.be/xbgBpl3dfMc](https://youtu.be/xbgBpl3dfMc)
+
+- distance measurement using examples/algo/a121/distance/processor.py
+  [https://youtu.be/vF7i7laj-D8](https://youtu.be/vF7i7laj-D8)
+  
+- speed measurement using examples/algo/a121/speed/processor.py
+  [https://youtu.be/zhe-X66ccDs](https://youtu.be/zhe-X66ccDs)
 # references
 - [acconeer-python-exploration/README.md](https://github.com/acconeer/acconeer-python-exploration/blob/master/README.md)
 - [XM125_connect_troubleshooting](https://docs.sparkfun.com/SparkFun_Qwiic_Pulsed_Radar_Sensor_XM125/troubleshooting/#issue-1-connecting-to-the-acconeer-exploration-tool)
