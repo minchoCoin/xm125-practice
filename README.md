@@ -61,7 +61,7 @@ Result 3:
 
 # get range-velocity heatmap
 checkout sparse_iq_copy.py
-![image](https://github.com/minchoCoin/xm125-practice/blob/main/range_velocity_map/result3.png)
+![image](https://github.com/minchoCoin/xm125-practice/blob/main/range_velocity_map/results3.png)
 
 
 # youtube video
@@ -79,7 +79,7 @@ checkout sparse_iq_copy.py
 
 - distance measurement using examples/algo/a121/distance/processor.py
   [https://youtu.be/vF7i7laj-D8](https://youtu.be/vF7i7laj-D8)
-  
+
 - speed measurement using examples/algo/a121/speed/processor.py
   [https://youtu.be/zhe-X66ccDs](https://youtu.be/zhe-X66ccDs)
 # references
