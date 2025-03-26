@@ -194,10 +194,11 @@ interrupt_handler = et.utils.ExampleInterruptHandler()
 print("Press Ctrl-C to end session")
 results=[]
 i=0
+start=time.time()
 while not interrupt_handler.got_signal:
     result = client.get_next()
     results.append(result)
-    print(f'result {i} is collected at {time.process_time()} seconds')
+    print(f'result {i} is collected at {round((time.time() - start)*1000,3)} milliseconds')
     
     i=i+1
 print("Disconnecting...")
