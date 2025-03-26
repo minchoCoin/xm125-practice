@@ -62,7 +62,8 @@ Result 3:
 # get range-velocity heatmap
 
 slow version(with many subsweeps): sparse_iq_copy.py
-faste version(only one sweep): faster_range_doppler.py
+
+fast version(only one sweep): faster_range_doppler.py
 
 ![image](https://github.com/minchoCoin/xm125-practice/blob/main/range_velocity_map/results3.png)
 
